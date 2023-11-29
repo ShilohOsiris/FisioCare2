@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96B54E">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESEAMOS SABER TU NACIONALIDAD"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <EditText
+        android:id="@+id/txtcedula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Ingrese cedula"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Ingresa nombre"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/txtcedula"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <RadioButton
+        android:id="@+id/rbmujer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Mujer"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <RadioButton
+        android:id="@+id/rbhombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="88dp"
+        android:text="Hombre"
+        app:layout_constraintStart_toEndOf="@+id/rbmujer"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre" />
+
+    <EditText
+        android:id="@+id/txtpais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ingresa Pais"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/rbmujer"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <EditText
+        android:id="@+id/txtciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Ingresa ciudad"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/txtpais"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <EditText
+        android:id="@+id/txtcorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Ingresa correo"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/txtciudad"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/btnregis"
+        android:layout_width="119dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:text="Registrar"
+        app:layout_constraintTop_toBottomOf="@+id/txtcorreo"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btnbuscamineto"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="44dp"
+        android:text="Buscar"
+        app:layout_constraintStart_toEndOf="@+id/btnregis"
+        app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="134dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:text="Actualizar "
+        app:layout_constraintTop_toBottomOf="@+id/btnregis"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/btnborrar"
+        android:layout_width="125dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:text="Borrar"
+        app:layout_constraintStart_toEndOf="@+id/btnactualizar"
+        app:layout_constraintTop_toBottomOf="@+id/btnbuscamineto" />
+
+    <EditText
+        android:id="@+id/txtapellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingresa apellido"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre"
+        tools:layout_editor_absoluteX="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

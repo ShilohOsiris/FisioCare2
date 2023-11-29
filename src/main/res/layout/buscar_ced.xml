@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="INGRESE LA CEDULA "
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="35dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Busqueda persona"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <EditText
+        android:id="@+id/TXTCED_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="LA PERSONA ES "
+        app:layout_constraintTop_toBottomOf="@+id/TXTCED_B"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <EditText
+        android:id="@+id/TXT_NOM_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:layout_editor_absoluteX="23dp" />
+
+    <EditText
+        android:id="@+id/TXT_APE_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_NOM_B"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <RadioButton
+        android:id="@+id/RbMUJER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Mujer"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_APE_B"
+        tools:layout_editor_absoluteX="29dp" />
+
+    <RadioButton
+        android:id="@+id/RBHOMBRE_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="28dp"
+        android:text="Hombre"
+        app:layout_constraintStart_toEndOf="@+id/RbMUJER"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_APE_B" />
+
+    <EditText
+        android:id="@+id/TXT_PAIS_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="pais"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/RbMUJER"
+        tools:layout_editor_absoluteX="35dp" />
+
+    <EditText
+        android:id="@+id/TXT_CIUDAD_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="ciudad"
+        android:inputType="none"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_PAIS_B"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <EditText
+        android:id="@+id/TXT_CORREO_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="correo"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_CIUDAD_B"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <Button
+        android:id="@+id/BTN_BUSCAR_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="669dp"
+        android:text="Buscar"
+        app:layout_constraintStart_toEndOf="@+id/TXT_CORREO_B"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
